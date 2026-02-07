@@ -1,6 +1,7 @@
 ﻿using Database.Models;
 using Microsoft.EntityFrameworkCore;
 
+
 Console.WriteLine("Database first with microServices");
 
 AppDbContext db = new AppDbContext();

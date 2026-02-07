@@ -4,4 +4,5 @@
   </Folder>
   <Project Path="Database/Database.csproj" />
   <Project Path="Tuto_01.ConsoleApp1/Tuto_01.ConsoleApp1.csproj" />
+  <Project Path="Tuto_02.WebApi/Tuto_02.WebApi.csproj" Id="fc082b1a-e68b-4533-bf5c-b252cf42c193" />
 </Solution>
