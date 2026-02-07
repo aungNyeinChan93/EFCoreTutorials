@@ -18,3 +18,8 @@ foreach (var category in categories)
 {
     Console.WriteLine($"category name is {category.CategoryName} \n");
 }
+
+
+var c = db.Categories.AsNoTracking().Where((c) => c.CategoryId == 1).FirstOrDefault();
+
+Console.WriteLine($"Category Name is {c.CategoryName} and DESC = {c?.Description}");
