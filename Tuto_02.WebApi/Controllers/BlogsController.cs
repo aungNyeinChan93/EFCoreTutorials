@@ -1,4 +1,4 @@
-﻿using Database.Models;
+﻿using KSLT_Database.Models;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
@@ -13,8 +13,8 @@ namespace Tuto_02.WebApi.Controllers
         public IActionResult GetAllBlogs()
         {
             AppDbContext db = new AppDbContext();
-            var category = db.Categories.FirstOrDefault();
-            return Ok(new {category});
+            var blogs = db.TblBlogs.ToList();
+            return Ok(new {blogs});
         }
     }
 }
