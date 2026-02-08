@@ -4,6 +4,7 @@
   </Folder>
   <Project Path="Database/Database.csproj" />
   <Project Path="KSLT_Database/KSLT_Database.csproj" Id="36300111-0996-4f47-8a9d-ab5853f0ebd3" />
+  <Project Path="Students.Database/Students.Database.csproj" Id="33baf353-dee3-450a-9a3e-74e1a0632d04" />
   <Project Path="Tuto_01.ConsoleApp1/Tuto_01.ConsoleApp1.csproj" />
   <Project Path="Tuto_02.WebApi/Tuto_02.WebApi.csproj" Id="fc082b1a-e68b-4533-bf5c-b252cf42c193" />
   <Project Path="Tuto_03.WebApi/Tuto_03.WebApi.csproj" Id="dd042ede-d2d3-40c9-92ce-753e2e49a91c" />
