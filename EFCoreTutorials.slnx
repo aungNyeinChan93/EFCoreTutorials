@@ -8,4 +8,5 @@
   <Project Path="Tuto_02.WebApi/Tuto_02.WebApi.csproj" Id="fc082b1a-e68b-4533-bf5c-b252cf42c193" />
   <Project Path="Tuto_03.WebApi/Tuto_03.WebApi.csproj" Id="dd042ede-d2d3-40c9-92ce-753e2e49a91c" />
   <Project Path="Tuto_04.ConsoleApp2/Tuto_04.ConsoleApp2.csproj" Id="8bf44d59-0e5a-415c-bc80-01b6f4c6abe0" />
+  <Project Path="Tuto_05.ConsoleApp1/Tuto_05.ConsoleApp1.csproj" Id="a1aacf9f-8bd3-4764-a135-e09aa6653335" />
 </Solution>
