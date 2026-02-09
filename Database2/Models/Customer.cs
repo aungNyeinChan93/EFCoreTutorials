@@ -1,51 +1,40 @@
 ﻿using System;
 using System.Collections.Generic;
+using Database2.ValidationAttributes;
 using System.ComponentModel.DataAnnotations;
-using System.ComponentModel.DataAnnotations.Schema;
 
-namespace Database.Models;
-
-//[Table("Customers")]
+namespace Database2.Models;
 public partial class Customer
 {
-    //[Column("CustomerId")]
     public string CustomerId { get; set; } = null!;
 
-    //[Column("CompanyName")]
     public string CompanyName { get; set; } = null!;
 
-    //[Required]
-    //[Column("ContactName")]
-    public string? ContactName { get; set; }
+    public string ContactName { get; set; } = null!;
 
-    //[Column("ContactTitle")]
     public string? ContactTitle { get; set; }
 
-    //[Column("Address")]
+    [Required]
     public string? Address { get; set; }
 
-
-    //[Column("City")]
+    //[Required(ErrorMessage ="City Field is Required!!!")]
     public string? City { get; set; }
 
-    //[Column("Region")]
     public string? Region { get; set; }
 
-    //[Column("PostalCode")]
+    [CustomerZipCode]
     public string? PostalCode { get; set; }
 
-    //[Column("Country")]
+    //[Validation()]
     public string? Country { get; set; }
 
-    //[Column("Phone")]
     public string? Phone { get; set; }
 
-    //[Column("Fax")]
     public string? Fax { get; set; }
 
-    //[Column("Orders")]
     public virtual ICollection<Order> Orders { get; set; } = new List<Order>();
 
-    //[Column("CustomerTypes")]
     public virtual ICollection<CustomerDemographic> CustomerTypes { get; set; } = new List<CustomerDemographic>();
+
+   
 }

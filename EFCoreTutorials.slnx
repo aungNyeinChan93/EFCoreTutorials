@@ -3,6 +3,7 @@
     <File Path=".gitignore" />
   </Folder>
   <Project Path="Database/Database.csproj" />
+  <Project Path="Database2/Database2.csproj" Id="8a23c803-920f-481b-abb5-bc8c8831813d" />
   <Project Path="KSLT_Database/KSLT_Database.csproj" Id="36300111-0996-4f47-8a9d-ab5853f0ebd3" />
   <Project Path="Students.Database/Students.Database.csproj" Id="33baf353-dee3-450a-9a3e-74e1a0632d04" />
   <Project Path="Tuto_01.ConsoleApp1/Tuto_01.ConsoleApp1.csproj" />
@@ -10,4 +11,5 @@
   <Project Path="Tuto_03.WebApi/Tuto_03.WebApi.csproj" Id="dd042ede-d2d3-40c9-92ce-753e2e49a91c" />
   <Project Path="Tuto_04.ConsoleApp2/Tuto_04.ConsoleApp2.csproj" Id="8bf44d59-0e5a-415c-bc80-01b6f4c6abe0" />
   <Project Path="Tuto_05.ConsoleApp1/Tuto_05.ConsoleApp1.csproj" Id="a1aacf9f-8bd3-4764-a135-e09aa6653335" />
+  <Project Path="Tuto_06.WebApi/Tuto_06.WebApi.csproj" Id="53dcc791-5390-41b8-98c5-e20bf3aea20d" />
 </Solution>
