@@ -51,6 +51,7 @@ namespace Tuto_06.WebApi.Controllers
                 return BadRequest("Create fail");
             }
             return Created();
+            //return CreatedAtAction("Create Customers",new {id = customer?.CustomerId},customer);
         }
 
         [HttpGet]

@@ -14,7 +14,7 @@ public partial class Customer
 
     public string? ContactTitle { get; set; }
 
-    [Required]
+    //[Required]
     public string? Address { get; set; }
 
     //[Required(ErrorMessage ="City Field is Required!!!")]
