@@ -8,14 +8,17 @@ namespace Tuto_06.WebApi.CustomerValidators.ActionFilters
 
         public override void OnActionExecuting(ActionExecutingContext context)
         {
-            var id  = context.ActionArguments["id"] as int?;
+            var actionName = context.ActionDescriptor.DisplayName;
+            Console.WriteLine($"{actionName}  Action Filter Run ... ");
 
+            var id  = context.ActionArguments["id"] as int?;
+             
             if (id.HasValue)
             {
                 if (id <=0)
                 {
                     context.ModelState.AddModelError("TestUser", "Test User Id invalid");
-                    context.Result = new BadRequestObjectResult(context.ModelState);
+                    context.Result = new BadRequestObjectResult(new ValidationProblemDetails(context.ModelState) { Status =400});
                 }
             }
 
