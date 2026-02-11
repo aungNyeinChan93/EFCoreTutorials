@@ -47,5 +47,14 @@ namespace Tuto_06.WebApi.Repos
 
             return res <=0 ? null : region;
         }
+
+        public static bool Delete(int? id)
+        {
+            var region = _db.Regions.AsNoTracking().FirstOrDefault(r => r.RegionId == id);
+            if (region is null) return false;
+            _db.Entry(region).State = EntityState.Deleted;
+            int res = _db.SaveChanges();
+            return res>= 0 ? true : false;
+        }
     }
 }

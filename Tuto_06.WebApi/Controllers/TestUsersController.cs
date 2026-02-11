@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Tuto_06.WebApi.CustomerValidators.ActionFilters;
+using Tuto_06.WebApi.CustomerValidators.ExceptionFilters;
 using Tuto_06.WebApi.Models;
 
 namespace Tuto_06.WebApi.Controllers
@@ -18,6 +19,7 @@ namespace Tuto_06.WebApi.Controllers
 
         [HttpGet("{id:int}")]
         [TestActionFilterOne]
+        //[GetTestUserExceptionFilter]
         public IActionResult GetTestUser([FromRoute]int? id)
         {
             return Ok(new { id});

@@ -44,5 +44,13 @@ namespace Tuto_06.WebApi.Controllers
             var result = RegionRepo.Update(id, region);
             return result is not null ? Ok(result) : BadRequest();
         }
+
+        [HttpDelete("{id:int}")]
+        public IActionResult DeleteRegion([FromRoute]int? id)
+        {
+            bool result = RegionRepo.Delete(id);
+            return result ? NoContent() : BadRequest();
+        }
+
     }
 }
