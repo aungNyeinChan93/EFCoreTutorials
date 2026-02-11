@@ -12,4 +12,5 @@
   <Project Path="Tuto_04.ConsoleApp2/Tuto_04.ConsoleApp2.csproj" Id="8bf44d59-0e5a-415c-bc80-01b6f4c6abe0" />
   <Project Path="Tuto_05.ConsoleApp1/Tuto_05.ConsoleApp1.csproj" Id="a1aacf9f-8bd3-4764-a135-e09aa6653335" />
   <Project Path="Tuto_06.WebApi/Tuto_06.WebApi.csproj" Id="53dcc791-5390-41b8-98c5-e20bf3aea20d" />
+  <Project Path="Tuto_07.WebApi/Tuto_07.WebApi.csproj" Id="3c6732c0-9077-49f0-ba81-ac13c5f5f1d2" />
 </Solution>
